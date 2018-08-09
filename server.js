@@ -93,6 +93,14 @@ app.get("/",(req,res) =>{
     })
 });
 
+app.get("/projects",(req,res) =>{
+    
+   
+    res.render("projects.hbs",{
+        message:"I love this course"
+    })
+});
+
 
 
 //Notice how after u wrote all that code, the backend still wont run until u start it on app. like this
