@@ -5,6 +5,9 @@ const hbs = require("hbs");
 const app = express();
 const fs = require('fs');
 
+//port will store a port that we need from heroku that will set for us. so we will use the port
+const port = process.env.PORT || 3000;
+
 
 
 
@@ -95,4 +98,4 @@ app.get("/",(req,res) =>{
 //Notice how after u wrote all that code, the backend still wont run until u start it on app. like this
 //now the app will actually run and handle all the requests u did and also notice how there is "3000" as the port, that will make the server host locally, later on u can change it to actual realw-rold
 
-app.listen(3000);
+app.listen(port);
